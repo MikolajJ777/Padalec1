@@ -1,20 +1,59 @@
 import random
 
-lista=["samochód", "drzwi", "książka", "stół", "słońce", "komputer", "morze", "kot", "kawa", "jabłko", "telefon", "okno", "pies", "biurko", "drzewo", "zima", "miasto", "chleb", "gwiazda",
-"piłka", "woda", "kwiat", "miłość", "rzeka", "niebo", "czasopismo", "rower", "szkoła", "dom", "skarpetki", "mysz", "stacja", "komputer", "marmur", "herbata", "cukier", "park", "płot",
-"śnieg", "noc", "zegar", "książka", "gitara", "kawałek", "samochód", "obraz", "zamek", "hotel", "sala", "koleżanka", "kolega", "ogród", "szafa", "przyjaciel", "telefon", "wschód",
-"zachód", "noc", "rzeka", "ziemia", "oceany", "krajobraz", "latarka", "serce", "pies", "lampa", "miasto", "las", "strona", "okno", "komputer", "pociąg", "kawa", "parasol", "walizka",
-"przyroda", "pralka", "książka", "ręka", "historia", "ławka", "czoło", "tłum", "rower", "kotlet", "wiatr", "pustynia", "zapach", "krzesło", "światło", "kawałek", "żaba", "zdjęcie",
-"paleta", "klucz", "zupa", "akordeon", "koralik", "żuraw", "koło", "granat", "piasek", "budynek", "śmierć", "zegarek", "wiatrak", "sylwetka", "wino", "koło", "jabłko", "strona",
-"towar", "błąd", "nos", "książka", "chłopak", "rower", "drzwi", "przygoda", "rzeka", "telefon", "zmiana", "świat", "biurko", "telefon", "buty", "płyn", "ulica", "wschód",
-"zmierzch", "worek", "prąd", "woda", "brzuch", "wiatr", "morze", "plaża", "wolność", "palce", "liczba", "samochód", "komputer", "książka", "flet", "poranek", "gabinet",
-"szkoła", "pokój", "woda", "krzesło", "las", "wędka", "krzak", "kieliszek", "klocki", "roślina", "palec", "przyjaciel", "dziecko", "statek", "karta", "czekolada", "hamulec",
-"powietrze", "koza", "ucho", "światło", "błąd", "król", "nos", "proces", "ser", "okular", "strefa", "deszcz", "książka", "dźwięk", "laptop", "pytanie", "odpowiedź", "korona",
-"zdjęcie", "atrament", "pokój", "waga", "deska", "kwiatek", "wieloryb", "brama", "krew", "tańce", "pokój", "horyzont", "portfel", "szkło", "traktor", "zamek", "motocykl",
-"basen", "zbiór", "ściana", "pałac", "lód", "bałwan", "las", "miłość", "ciasto", "mysz", "grzebień", "pusta", "książka", "muszka", "koralik", "zegar", "deska", "koc",
-"pokój", "ekipa", "bieg", "zdjęcie", "ściana", "szklanka", "ul", "kwiat", "słoń", "pasta", "krawat", "laptop", "ekran", "kwiaty", "śpiew", "śnieg", "budzik", "fala",
-"pomarańcza", "jajko", "wilk", "lód", "zupa", "tatuaż", "pamięć", "żarówka", "wulkan", "spódnica", "maszynka", "komputer", "klucz", "zegar", "las", "zupa", "opowieść",
-"liść", "szalik", "banknot", "peleryna", "książka", "chleb", "pokój", "słońce", "meble", "piłka", "lampa", "woda", "koc", "obraz", "owoc", "jeż", "mięso", "praca",
-"zima", "pasek", "koc", "kość", "komputer", "plac", "prosiak", "latarnia", "książka", "piekarnik", "wąż", "guma", "szkło", "pokój", "serce", "piłka", "strona",
- "złoto", "miód", "górka", "prąd", "tablet", "fotele", "proszek", "słońce", "róża", "grzanka", "zegar", "przyjaciel", "portfel", "komputer",]
+lista=["samochod", "drzwi", "ksiazka", "stol", "slonce", "komputer", "morze", "kot", "kawa", "jablko", "telefon", "okno", "pies",
+ "biurko", "drzewo", "zima", "miasto", "chleb", "gwiazda", "pilka", "woda", "kwiat", "milosc", "rzeka", "niebo", "czasopismo",
+ "rower", "szkola", "dom", "skarpetki", "mysz", "stacja", "komputer", "marmur", "herbata", "cukier", "park", "plot", "snieg",
+ "noc", "zegar", "ksiazka", "gitara", "kawalek", "samochod", "obraz", "zamek", "hotel", "sala", "kolezanka", "kolega", "ogrod",
+ "szafa", "przyjaciel", "telefon", "wschod", "zachod", "noc", "rzeka", "ziemia", "oceany", "krajobraz", "latarka", "serce", "pies",
+ "lampa", "miasto", "las", "strona", "okno", "komputer", "pociag", "kawa", "parasol", "walizka", "przyroda", "pralka", "ksiazka",
+ "reka", "historia", "lawka", "czolo", "tlum", "rower", "kotlet", "wiatr", "pustynia", "zapach", "krzeslo", "swiatlo", "kawalek",
+ "zaba", "zdjecie", "paleta", "klucz", "zupa", "akordeon", "koralik", "zuraw", "kolo", "granat", "piasek", "budynek", "smierc",
+ "zegarek", "wiatrak", "sylwetka", "wino", "kolo", "jablko", "strona", "towar", "blad", "nos", "ksiazka", "chlopak", "rower",
+ "drzwi", "przygoda", "rzeka", "telefon", "zmiana", "swiat", "biurko", "telefon", "buty", "plyn", "ulica", "wschod", "zmierzch",
+ "worek", "prad", "woda", "brzuch", "wiatr", "morze", "plaza", "wolnosc", "palce", "liczba", "samochod", "komputer", "ksiazka",
+ "flet", "poranek", "gabinet", "szkola", "pokoj", "woda", "krzeslo", "las", "wedka", "krzak", "kieliszek", "klocki", "roslina",
+ "palec", "przyjaciel", "dziecko", "statek", "karta", "czekolada", "hamulec", "powietrze", "koza", "ucho", "swiatlo", "blad",
+ "krol", "nos", "proces", "ser", "okular", "strefa", "deszcz", "ksiazka", "dzwiek", "laptop", "pytanie", "odpowiedz", "korona",
+ "zdjecie", "atrament", "pokoj", "waga", "deska", "kwiatek", "wieloryb", "brama", "krew", "tance", "pokoj", "horyzont", "portfel",
+ "szklo", "traktor", "zamek", "motocykl", "basen", "zbior", "sciana", "palac", "lod", "balwan", "las", "milosc", "ciasto", "mysz",
+ "grzebien", "pusta", "ksiazka", "muszka", "koralik", "zegar", "deska", "koc", "pokoj", "ekipa", "bieg", "zdjecie", "sciana",
+ "szklanka", "ul", "kwiat", "slon", "pasta", "krawat", "laptop", "ekran", "kwiaty", "spiew", "snieg", "budzik", "fala", "pomarancza",
+ "jajko", "wilk", "lod", "zupa", "tatuz", "pamiec", "zarowka", "wulkan", "spodnica", "maszynka", "komputer", "klucz", "zegar", "las",
+ "zupa", "opowiesc", "lisc", "szalik", "banknot", "peleryna", "ksiazka", "chleb", "pokoj", "slonce", "meble", "pilka", "lampa", "woda",
+ "koc", "obraz", "owoc", "jez", "mieso", "praca", "zima", "pasek", "koc", "kosc", "komputer", "plac", "prosiak", "latarnia", "ksiazka",
+ "piekarnik", "waz", "guma", "szklo", "pokoj", "serce", "pilka", "strona", "zloto", "miod", "gorka", "prad", "tablet", "fotele",
+ "proszek", "slonce", "roza", "grzanka", "zegar", "przyjaciel", "portfel", "komputer"]
 
+haslo = str(lista[random.randint(0,len(lista)-1)])
+tablica=list(haslo)
+
+
+for i in range(len(haslo)):
+    tablica[i]= "_"
+
+
+zycia=6
+
+
+while zycia > 0:
+    print("")
+    print("pozostało ci ", zycia,"zyc")
+    print("")
+    print(" ".join(tablica))
+    print(" ")
+    print("Podaj swoją litere: ")
+    litera=input()
+    if litera in haslo:
+        for i in range(len(haslo)):
+            if haslo[i]==litera:
+                tablica[i]=litera
+        if "".join(map(str, tablica))==haslo:
+            print("")
+            print("Pozostało ci ", zycia, "zyc")
+            print("")
+            print(" ".join(tablica))
+            print(" ")
+            print("Wygrałeś!")
+            break
+    else:
+        zycia-=1
