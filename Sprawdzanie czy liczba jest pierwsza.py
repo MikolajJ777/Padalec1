@@ -2,16 +2,16 @@ while True:
     n=int(input("Podaj swoją liczbe: "))
     for i in range(-1,n):
         if n==1:
-            print("Jeden nie jest liczbą pierwszą")
+            print("To nie jest liczba pierwsza")
             break
         elif n==3:
-            print("Trzy jest liczbą pierwszą")
+            print("To jest liczba pierwsza")
             break
         elif n==2:
-            print("Dwa jest liczbą pierwszą")
+            print("To jest liczba pierwsza")
             break
         elif n==5:
-            print("Pięć jest liczbą pierwszą")
+            print("To jest liczba pierwsza")
             break
         elif n%2==0:
             print("To nie jest liczba pierwsza")
